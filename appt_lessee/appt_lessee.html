@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StorePal</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+  <section class="showcase">
+    <header>
+      <h2 class="logo">Home</h2>
+      <div class="toggle"></div>
+    </header>
+    <div class="overlay"></div>
+    <div class="text">
+      <h2>StorePal </h2>
+      <h3>Appointment Form </h3><br><br>
+    </header>
+    <div class="overlay"></div>
+    <form action="/action_page.php">
+        <label for="datemin">Select your preferred date:</label><br>
+        <input type="date" id="datemin" name="datemin" min="2021-05-01"><br><br>
+        <label for="Timeslot">Timeslot:</label><br>
+        <input list="Timeslot" name="Timeslot">
+        <datalist id="Timeslot">
+            <option value="9am-10am"></option>>
+            <option value="10am-11am"></option>>
+            <option value="11am-12pm"></option>>
+            <option value="2pm-3pm"></option>>
+            <option value="3pm-4pm"></option>>
+            <option value="4pm-5pm"></option>>
+        </datalist> <br><br>
+        <label for="location">Choose a location:</label><br>
+        <input list="location" name="location">
+        <datalist id="location">
+            <option value="Ang Mo Kio">
+            <option value="Ayer Rajah">
+            <option value="Bukit Merah Central">
+            <option value="Chai Chee">
+            <option value="Geylang">
+            <option value="Jurong">
+          </datalist> <br><br>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="John" autofocus ><br><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" placeholder="Chua"> <br><br>
+        <label for="email">Enter your email:</label> <br>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="phone">Enter your contact number:</label><br>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{8}"><br><br>
+        <input type="submit" value="Submit" formaction="/Group1A/src/appt_lessee/success.html">
+        <input type="reset">
+      </form> <br><br>
+
+    <ul class="social">
+      <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+      <!-- <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li> -->
+      <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+    </ul>
+  </section>
+  <div class="menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="./src/selfstorage.html">Self Storage</a></li>
+      <li><a href="./src/warehouse.html">Warehouse</a></li>
+      <li><a href="./src/serviceoffice.html">Service Office</a></li>
+      <li><a href="./src/login.html">Log in</a></li>
+    </ul>
+
+    <script src="./src/app.js"></script>
+
+  </div>
+
+</body>
+
+</html>
